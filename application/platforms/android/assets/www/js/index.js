@@ -45,13 +45,13 @@ function onDeviceReady() {
     
     function webB(){
         
-        window.open('http://g70523.github.io/AVF/gh-pages/application/platforms/ios/www/index.html', '_blank', 'location=yes');
+        window.open('http://g70523.github.io/AVF/application/platforms/ios/www/index.html', '_blank', 'location=yes');
         
     };
     
     function webC(){
         
-        window.open('http://g70523.github.io/AVF/gh-pages/application/platforms/android/assets/www/index.html', '_blank', 'location=yes');
+        window.open('http://g70523.github.io/AVF/application/platforms/android/assets/www/index.html', '_blank', 'location=yes');
         
     };
     
