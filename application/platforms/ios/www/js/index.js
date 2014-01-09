@@ -12,27 +12,47 @@ function onDeviceReady() {
    
     $('<a href="#github" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">GITHUB</a>').appendTo('#content');
     $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">INSTAGRAM</a>').appendTo('#content');
-    $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">FACEBOOK</a>').appendTo('#content');
+    $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">YOUTUBE</a>').appendTo('#content');
     $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">ACCELEROMETER</a>').appendTo('#content');
     $('<a href="#compass" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">COMPASS</a>').appendTo('#content');
+    $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">CAMERA</a>').appendTo('#content');
     $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">MASHUP #1</a>').appendTo('#content');
     $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">MASHUP #2</a>').appendTo('#content');
-    $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">MASHUP #3</a>').appendTo('#content');
     
     
+   //Git Page
     
+    $('<button id="gitA" class="ui-btn ui-mini">APPLICATION</button>').appendTo('#gitContent');
+    $('<button id="gitB" class="ui-btn ui-mini">IOS</button>').appendTo('#gitContent');
+    $('<button id="gitC" class="ui-btn ui-mini">ANDROID</button>').appendTo('#gitContent');
+
+   //Compass Page
     
-    
-    $('<button id="comp" class="ui-btn ui-mini">COMPASS</button>').appendTo('#comps');
+    $('<button id="comp" class="ui-btn ui-mini">START COMPASS</button>').appendTo('#comps');
+    $('<button id="comp" class="ui-btn ui-mini">STOP COMPASS</button>').appendTo('#comps');
     $('<div id="heading">Waiting For Heading......</div>').appendTo('#comps');
+    $('#heading').css({padding: "20px",border: "2px solid black",marginTop: "20px" });
+    
 
     
-                                //start inAppWebBrowser controls
+                                //start inAppWebBrowser controls for git page
     
-    function web(){
+    function webA(){
         
-        window.open('https://github.com/g70523/IWorkOut', '_blank', 'location=yes');
+        window.open('https://github.com/g70523/AVF', '_blank', 'location=yes');
     
+    };
+    
+    function webB(){
+        
+        window.open('http://g70523.github.io/AVF/gh-pages/application/platforms/ios/www/index.html', '_blank', 'location=yes');
+        
+    };
+    
+    function webC(){
+        
+        window.open('http://g70523.github.io/AVF/gh-pages/application/platforms/android/assets/www/index.html', '_blank', 'location=yes');
+        
     };
     
                                 //start inAppWebBrowser controls
@@ -65,7 +85,10 @@ function onDeviceReady() {
     
     
     $('#comp').on("click", nav)/*compass button*/
-    $('#git').on("click", web)/*inAppWebBrowser*/
+    $('#gitA').on("click", webA)/*inAppWebBrowser*/
+    $('#gitB').on("click", webB)/*inAppWebBrowser*/
+    $('#gitC').on("click", webC)/*inAppWebBrowser*/
+    
 
 
 
