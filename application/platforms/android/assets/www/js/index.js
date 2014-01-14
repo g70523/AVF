@@ -1,17 +1,7 @@
 /*Louise Whitney*/
 /*AVF 1401*/
 
-
-
-
-document.addEventListener("deviceready", onDeviceReady, false);
-
-// device APIs are available
-
-function onDeviceReady() {
-   
-    
-    // Home Page
+  // Home Page
     
     
     $('#profile').css({borderRadius: "10px", border: "5px solid black", padding: "10px", textAlign: "center"});
@@ -62,6 +52,16 @@ function onDeviceReady() {
     $('<button id="comp" class="ui-btn ui-mini">STOP COMPASS</button>').appendTo('#comps');
     $('<div id="heading">Waiting For Heading......</div>').appendTo('#comps');
     $('#heading').css({padding: "20px",border: "2px solid black",marginTop: "20px" });
+
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+// device APIs are available
+
+function onDeviceReady() {
+   
+    
+  
     
 
     
