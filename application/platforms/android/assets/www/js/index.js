@@ -10,6 +10,13 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
    
+    
+    // Home Page
+    
+    
+    $('#profile').css({borderRadius: "10px", border: "5px solid black", padding: "10px", textAlign: "center"});
+    
+    $('<a href="#research" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">RESEARCH TOPICS</a>').appendTo('#content');
     $('<a href="#github" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">GITHUB</a>').appendTo('#content');
     $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">INSTAGRAM</a>').appendTo('#content');
     $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">YOUTUBE</a>').appendTo('#content');
@@ -18,6 +25,29 @@ function onDeviceReady() {
     $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">CAMERA</a>').appendTo('#content');
     $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">MASHUP #1</a>').appendTo('#content');
     $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">MASHUP #2</a>').appendTo('#content');
+    
+   // Research Page
+    var t1 = $('<div id="top1"</div>').appendTo('#resContent');
+    var t2 = $('<div id="top2"</div>').appendTo('#resContent');
+    var t3 = $('<div id="top3"</div>').appendTo('#resContent');
+    
+    var re1 = $('<h1>Research Topic Week 2</h1>'+'<p>Login With Facebook Options</p>');
+    var re2 = $('<h1>Research Topic Week 3</h1>'+'<p>Using the Accelerometer to make a pedometer</p>');
+    var re3 = $('<h1>Research Topic Week 4</h1>'+'<p>Mashup options with camera and geo api\'s</p>');
+    
+    
+    t1.css({border:"2px solid black",padding: "10px", textAlign: "center", borderRadius:"10px"});
+    t2.css({border:"2px solid black",padding: "10px", textAlign: "center", borderRadius:"10px", marginTop: "10px"});
+    t3.css({border:"2px solid black",padding: "10px", textAlign: "center", borderRadius:"10px", marginTop: "10px"});
+
+    
+    re1.appendTo('#top1');
+    re2.appendTo('#top2');
+    re3.appendTo('#top3');
+    
+    
+
+    
     
     
    //Git Page
