@@ -1,69 +1,174 @@
 /*Louise Whitney*/
 /*AVF 1401*/
+// Home Page
 
-  // Home Page
-    
-    
-    $('#profile').css({borderRadius: "10px", border: "5px solid black", padding: "10px", textAlign: "center"});
-    
-    $('<a href="#research" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">RESEARCH TOPICS</a>').appendTo('#content');
-    $('<a href="#github" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">GITHUB</a>').appendTo('#content');
-    $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">INSTAGRAM</a>').appendTo('#content');
-    $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">YOUTUBE</a>').appendTo('#content');
-    $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">ACCELEROMETER</a>').appendTo('#content');
-    $('<a href="#compass" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">COMPASS</a>').appendTo('#content');
-    $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">CAMERA</a>').appendTo('#content');
-    $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">MASHUP #1</a>').appendTo('#content');
-    $('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">MASHUP #2</a>').appendTo('#content');
-    
-   // Research Page
-    var t1 = $('<div id="top1"</div>').appendTo('#resContent');
-    var t2 = $('<div id="top2"</div>').appendTo('#resContent');
-    var t3 = $('<div id="top3"</div>').appendTo('#resContent');
-    
-    var re1 = $('<h1>Research Topic Week 2</h1>'+'<p>Login With Facebook Options</p>');
-    var re2 = $('<h1>Research Topic Week 3</h1>'+'<p>Using the Accelerometer to make a pedometer</p>');
-    var re3 = $('<h1>Research Topic Week 4</h1>'+'<p>Mashup options with camera and geo api\'s</p>');
-    
-    
-    t1.css({border:"2px solid black",padding: "10px", textAlign: "center", borderRadius:"10px"});
-    t2.css({border:"2px solid black",padding: "10px", textAlign: "center", borderRadius:"10px", marginTop: "10px"});
-    t3.css({border:"2px solid black",padding: "10px", textAlign: "center", borderRadius:"10px", marginTop: "10px"});
 
-    
-    re1.appendTo('#top1');
-    re2.appendTo('#top2');
-    re3.appendTo('#top3');
-    
-    
+$('#profile').css({borderRadius: "10px", border: "5px solid black", padding: "10px", textAlign: "center"});
 
-    
-    
-    
-   //Git Page
-    
-    $('<button id="gitA" class="ui-btn ui-mini">APPLICATION</button>').appendTo('#gitContent');
-    $('<button id="gitB" class="ui-btn ui-mini">IOS</button>').appendTo('#gitContent');
-    $('<button id="gitC" class="ui-btn ui-mini">ANDROID</button>').appendTo('#gitContent');
+$('<a href="#research" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">RESEARCH TOPICS</a>').appendTo('#content');
+$('<a href="#github" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">GITHUB</a>').appendTo('#content');
+$('<a href="#insta" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">INSTAGRAM</a>').appendTo('#content');
+$('<a href="#workout" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">WORKOUT</a>').appendTo('#content');
+$('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">ACCELEROMETER</a>').appendTo('#content');
+$('<a href="#compass" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">COMPASS</a>').appendTo('#content');
+$('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">CAMERA</a>').appendTo('#content');
+$('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">MASHUP #1</a>').appendTo('#content');
+$('<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-mini">MASHUP #2</a>').appendTo('#content');
 
-   //Compass Page
-    
-    $('<button id="comp" class="ui-btn ui-mini">START COMPASS</button>').appendTo('#comps');
-    $('<button id="comp" class="ui-btn ui-mini">STOP COMPASS</button>').appendTo('#comps');
-    $('<div id="heading">Waiting For Heading......</div>').appendTo('#comps');
-    $('#heading').css({padding: "20px",border: "2px solid black",marginTop: "20px" });
+// Research Page
+var t1 = $('<div id="top1"</div>').appendTo('#resContent');
+var t2 = $('<div id="top2"</div>').appendTo('#resContent');
+var t3 = $('<div id="top3"</div>').appendTo('#resContent');
+
+var re1 = $('<h1>Research Topic Week 2</h1>'+'<p>Login With Facebook Options</p>');
+var re2 = $('<h1>Research Topic Week 3</h1>'+'<p>Using the Accelerometer to make a pedometer</p>');
+var re3 = $('<h1>Research Topic Week 4</h1>'+'<p>Mashup options with camera and geo api\'s</p>');
+
+
+t1.css({border:"2px solid black",padding: "10px", textAlign: "center", borderRadius:"10px"});
+t2.css({border:"2px solid black",padding: "10px", textAlign: "center", borderRadius:"10px", marginTop: "10px"});
+t3.css({border:"2px solid black",padding: "10px", textAlign: "center", borderRadius:"10px", marginTop: "10px"});
+
+
+re1.appendTo('#top1');
+re2.appendTo('#top2');
+re3.appendTo('#top3');
+
+
+
+
+
+
+//Git Page
+
+$('<button id="gitA" class="ui-btn ui-mini">APPLICATION</button>').appendTo('#gitContent');
+$('<button id="gitB" class="ui-btn ui-mini">IOS</button>').appendTo('#gitContent');
+$('<button id="gitC" class="ui-btn ui-mini">ANDROID</button>').appendTo('#gitContent');
+
+//Compass Page
+
+$('<button id="comp" class="ui-btn ui-mini">START COMPASS</button>').appendTo('#comps');
+$('<button id="comp" class="ui-btn ui-mini">STOP COMPASS</button>').appendTo('#comps');
+$('<div id="heading">Waiting For Heading......</div>').appendTo('#comps');
+$('#heading').css({padding: "20px",border: "2px solid black",marginTop: "20px" });
+
 
 
 document.addEventListener("deviceready", onDeviceReady, false);
+
+
+
+//start instagram api
+
+$("#insta").on('pageinit', function(){
+  
+               
+            $(function(){
+                 
+                 var url = "https://api.instagram.com/v1/tags/fitness/media/recent?callback=?&amp;client_id=2e9a62e00d65456196468390b7d46103"
+                 
+                 $.getJSON(url, src);
+                 
+               });
+
+            function src(info){
+               
+               
+               console.log(info);
+               
+                    $.each(info.data, function(index, photo){
+                      
+                      var pic = "<li class='picClass'><a href='#home'><img src='" + photo.images.thumbnail.url +"' /></a></li>";
+                      
+                       
+                          
+                          
+                           
+                           //console.log(user);
+                    
+                           $('#picId').append(pic);
+                           
+                    });//end each
+               
+            };
+               
+               
+               $('<button id="instaRef" class="ui-btn ui-mini">REFRESH</button>').prependTo('#instaData');
+               
+               $('#instaRef').on("click", src);
+                                 
+                                 
+                
+               
+               
+            
+}); //end instagram api
+
+//Start workout page
+
+/*<div id="workData" data-role="content">
+
+<ul id="workId">
+
+</ul>
+
+
+</div>*/
+
+$("#workout").on('pageinit', function(){
+               
+               
+    $.ajax({
+        url: 'https://trailapi-trailapi.p.mashape.com/?q[activities_activity_type_name_eq]=hiking&q[state_cont]=Washington&q[city_cont]=Seattle&limit=25',
+        type: 'POST',
+        data: {},
+        datatype: 'json',
+        success: function(data){
+           
+           for(var i=0, x=data.places.length; i<x; i++){
+           var target = data.places[i];
+           $(''+
+             '<div class="userContent">'+
+             '<h2>'+ target.name +'</h2>'+
+             '<p>' + target.city + ", "+ target.state +'</p>'+
+             '<p>'+  "Description: " + target.description +'</p>'+
+             '<p>'+  "Directions: " + target.directions +'</p>'+
+             '</div>'
+             ).appendTo('#workData');
+           
+           $('.userContent').css({border: "3px solid black",borderRadius: "10px", padding: "10px", marginTop: "10px"});
+        
+           console.log(target);
+           
+           };
+           
+           },
+        error: function(err) { alert(err); },
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader("X-Mashape-Authorization", "ZjN3mT1nPijTta3gNTWUAs3luwzHCSJJ");
+                }
+           
+    });
+           
+            
+              
+               
+               
+});//End Workout Page
+
+
+
+
+
+
 
 // device APIs are available
 
 function onDeviceReady() {
    
     
-  
-    
 
+    
     
                                 //start inAppWebBrowser controls for git page
     
@@ -85,7 +190,7 @@ function onDeviceReady() {
         
     };
     
-                                //start inAppWebBrowser controls
+                                //end inAppWebBrowser controls
     
     
     
